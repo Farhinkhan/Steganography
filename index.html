@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Stagnography</title>
+    <link rel="stylesheet" href="styles.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+  </head>
+  <body>
+<div class = "container">
+  
+<div  class ="main">
+<header>  <h1>STEGANO<span class ="s1">GRAPY</span> </h1></header>
+  </div>
+  <h3>Hide Image Inside Another Image</h3>
+  
+
+<div class="mainCont">
+<div id= "cont1"> 
+<canvas id="can1"></canvas>
+<p> Display Image <input type="file" multiple ="false" accept ="image/*" onchange="displayUpload()"id ="dInput"/></p>
+  </div>
+  <div id= "cont2"> 
+  <canvas id="can2"></canvas>
+    <p>  
+  Hide Image <input type="file" multiple ="false" accept ="image/*" onchange="hideUpload()"id ="hInput"/>
+  </p>
+</div>
+
+</div>
+<div class="command">
+<input type="button" value="Merge" onclick="stegnography()" id ="MergeBtn" class ="button-63"/>
+  
+  <input type="button" value="Decrupt" onclick="decrupt()" id ="decrupt" class ="button-63"/>
+  
+  <input type="button" value="Clear" onclick="Clearscr()" id ="ClearB" class ="button-63"/>
+</div>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>
